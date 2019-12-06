@@ -71,3 +71,13 @@ func TestSherlockAndTheValidStringTestCase7(t *testing.T) {
 		t.Errorf("got %s instead of YES", valid)
 	}
 }
+
+func TestSherlockAndTheValidStringTestCase5(t *testing.T) {
+	s := "aaaaabc"
+
+	valid := isValid(s)
+
+	if valid != "NO" {
+		t.Errorf("got %s instead of NO", valid)
+	}
+}
